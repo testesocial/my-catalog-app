@@ -26,7 +26,7 @@ function App() {
           nome: 'Caneca Programador',
           preco: 34.9,
           descricao: 'Caneca temática para desenvolvedores.',
-          imagem: 'https://cdn.awsli.com.br/600x700/2452/2452852/produto/1906244605f841b56b5.jpg'
+          imagem: '/img/CanecaDEV.jpg'
         },
         {
           id: 3,
