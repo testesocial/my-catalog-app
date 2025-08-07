@@ -18,15 +18,22 @@ function App() {
           id: 1,
           nome: 'Camiseta React',
           preco: 59.9,
-          descricao: 'Camiseta com estampa do React.',
-          imagem: 'Camiseta React.png'
+          descricao: 'Camiseta preta com estampa do React.',
+          imagem: '/img/camisetaReact.jpg'
         },
         {
           id: 2,
-          nome: 'Caneca Dev',
-          preco: 29.9,
-          descricao: 'Caneca personalizada para devs.',
-          imagem: 'https://via.placeholder.com/150'
+          nome: 'Caneca Programador',
+          preco: 34.9,
+          descricao: 'Caneca temática para desenvolvedores.',
+          imagem: 'https://cdn.awsli.com.br/600x700/2452/2452852/produto/1906244605f841b56b5.jpg'
+        },
+        {
+          id: 3,
+          nome: 'Mouse Gamer RGB',
+          preco: 119.9,
+          descricao: 'Mouse ergonômico com luzes RGB.',
+          imagem: 'https://images.kabum.com.br/produtos/fotos/138389/mouse-gamer-redragon-cobra-rgb-12400dpi-7-botoes-programaveis-preto-m711-v2_1620324301_g.jpg'
         }
       ]);
       setLoading(false);
@@ -90,7 +97,7 @@ function App() {
         <p>Carregando produtos...</p>
       ) : (
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px' }}>
-          {produtos.map((produto) => (
+          {produtos.map(produto => (
             <ProdutoCard key={produto.id} {...produto} />
           ))}
         </div>
@@ -100,5 +107,3 @@ function App() {
 }
 
 export default App;
-
-
